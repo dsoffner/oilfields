@@ -1,9 +1,6 @@
 <%- include layouts/header.ejs %>
 
         <div class="page-data">
-         <div class="data-btn">
-           <button onClick="addUser();">+ Add</button>
-         </div>
          <div class="data-table">
             <table border="1" cellpadding="7" cellspacing="7">
                 <tr>
@@ -12,7 +9,6 @@
                     <th>Location</th>
                     <th>Production</th>
                     <th>Discovery</th>
-                    <th width="120px">Action</th>
                 </tr>
 
                 <% if(data.length){
@@ -25,12 +21,6 @@
                     <td><%=data[i].location%></td>
                     <td><%=data[i].production%></td>
                     <td><%=data[i].discovery%></td>
-                    <td>
-                        <a class="a-inside edit" href="../oilfieldsweb/edit/<%=data[i].id%>">Edit</a>
-
-                        <a class="a-inside delete" href="../oilfieldsweb/delete/<%=data[i].id%>">Delete</a>
-
-                    </td>
                 </tr>
             <% }
 

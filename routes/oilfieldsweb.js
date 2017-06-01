@@ -13,7 +13,7 @@ exports.listall = function(req, res){
             if(err)
                 console.log("Error Selecting : %s ",err );
 
-            res.render('oilfields_web_all',{page_title:"Oil Fields - List",data:rows});
+            res.render('oilfields_web_all',{page_title:"Top 100 U.S. Oil and Gas Fields (2015)",data:rows});
 
 
          });
@@ -33,7 +33,7 @@ exports.listsummary = function(req, res){
             if(err)
                 console.log("Error Selecting : %s ",err );
 
-            res.render('oilfields_web_summary',{page_title:"Oil Fields - List",data:rows});
+            res.render('oilfields_web_summary',{page_title:"Top 100 U.S. Oil and Gas Fields (2015)",data:rows});
 
 
          });
@@ -55,7 +55,7 @@ exports.details = function(req, res){
             if(err)
                 console.log("Error Selecting : %s ",err );
 
-            res.render('oilfields_web_all',{page_title:"Oil Fields - Details",data:rows});
+            res.render('oilfields_web_all',{page_title:"Top 100 U.S. Oil and Gas Fields (2015) - Details",data:rows});
 
 
          });
